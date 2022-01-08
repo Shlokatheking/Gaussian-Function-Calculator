@@ -65,7 +65,7 @@ html {
   color: #03e9f4;
   font-size: 16px;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   overflow: hidden;
   transition: 0.2s;
   margin-top: 40px;
@@ -75,12 +75,12 @@ html {
 .login-box a {
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   color: #03e9f4;
   font-size: 16px;
   margin-bottom: 20px;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   overflow: hidden;
   transition: 0.2s;
   margin-top: 20px;
@@ -131,7 +131,10 @@ html {
   animation: btn-anim2 1s linear infinite;
   animation-delay: 0.25s;
 }
-
+/* .dropbtn span:nth-child(1) {
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+} */
 @keyframes btn-anim2 {
   0% {
     top: -100%;

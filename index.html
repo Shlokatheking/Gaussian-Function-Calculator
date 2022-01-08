@@ -292,12 +292,12 @@
 }
 
 </style>
-<link rel="stylesheet" href="https://github.com/Shlokatheking/temp/blob/master/style.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="/box.css">
 <link rel="stylesheet" href="/checkbox.css">
 <link rel="stylesheet" href="/processing.css">
 <link rel="stylesheet" href="/dropdown.css">
-
+<link rel="stylesheet" href="/elements_dropdown.css">
 
 
 
@@ -1288,29 +1288,50 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    Calculate
+                    CALCULATE
                   </a> 
-
-                  <a href="#" onclick="reset()">
+                
+                  <!-- <a onclick="reset()" id="reset_btn" style="width: 80%; text-align: center;" >
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     Reset
-                  </a>
+                  </a>  -->
+
+
+
                 </div>
+                
                 </form>
+                <div class="dropdown">
+                  <a><button type="button" onclick="myFunction()" class="dropbtn"><span></span><span></span><span></span><span></span>CHOOSE ELEMENTS</button></a>
+                  <div style="display:flex; justify-content: center; overflow-y: auto;"> 
+                  <div id="myDropdown" class="dropdown-content" style="overflow-y: auto; height: 300px; width: 80%;">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a class="remove" onclick="SelectElement(1,`H`)">H</a>
+                    <a class="remove" onclick="SelectElement(2,`He`)">He</a>
+                    <a class="remove" onclick="SelectElement(3,`Li`)">Li</a>
+                    <a class="remove" onclick="SelectElement(4,`Be`)">Be</a>
+                    <a class="remove" onclick="SelectElement(5,`B`)">B</a>
+                    <a class="remove" onclick="SelectElement(6,`C`)">C</a>
+                    <a class="remove" onclick="SelectElement(7,`N`)">N</a>
+                    <a class="remove" onclick="SelectElement(8,`O`)">O</a>
+                    <a class="remove" onclick="SelectElement(9,`F`)">F</a>
+
+                  </div>
+                </div>
+                </div>
 
               </div>
         </center>
+
       </div>
+      <!-- <div style="display: none; justify-content: center;" id="small_inp">
+        <input type="text"></input>
+      </div> -->
+
     <br>
-
-    
-
-
-
-
 
     </div>
   </div>
@@ -1326,5 +1347,6 @@
 <script src="/configurations.js"></script>
 <script src="/dd_selection.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="elements_dropdown.js"></script>
 </body>
 </html>
